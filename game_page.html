@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Jogo: quiz de matematica!</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="game.css">
+    <script src="game_page.js"></script>
+</head>
+
+<body onload="initialize()">
+
+    <h4 id="NomeJogador1"></h4> <span id="player1_score"></span>
+    <br>
+    <h4 id="NomeJogador2"></h4> <span id="player2_score"></span>
+
+    <div class="container">
+        <center>
+            <h2 style="color:white;">Quiz de matematica!</h2>
+
+            <div id="output">
+                Resposta: <input>
+                <br>
+                <button onclick="send()" class="btn btn-success" style="width: 30%;">checar</button>
+            </div>
+            <br>
+            <span id="question"></span>
+            <br>
+            <input id="number1"> numero1
+            <br>
+            <input id="number2"> numero2
+            <br>
+            <button class="btn btn-light" onclick="send()">enviar</button>
+        </center>
+    </div>
+</body>
+
+</html>
